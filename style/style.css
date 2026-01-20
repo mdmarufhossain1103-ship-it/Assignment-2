@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+header{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px 100px;
+    background-color: #1A0B2E;
+    align-items: center;
+}
+nav{
+    display: flex;
+   gap: 320px;
+}
+nav h2,.tech{
+    font-size: 46px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+#wave{
+    color: #9100F8;
+    background-image: linear-gradient(to top,#F7E93F 0%, #FB09B4 51% , #9100F8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+nav ul{
+    display: flex;
+    gap: 32px;
+   align-items: center;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500px;
+    color: #FFFFFF;
+}
+.btn{
+    background-image: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    padding: 12.5px 40px 12.5px 16px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10000px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.banner{
+    background-color: #1A0B2E;
+    max-width: 100%;
+}
+.banner-container{
+    position: relative;
+}
+.banner-image{
+    position: relative;
+}
+.hero-bg{
+    max-width: 100%;
+}
+.circle{
+    position: absolute;
+    max-width: 60%;
+    top: 50%;
+    left: 56.3%;
+    transform: translate(-50%,-50%);
+}
+.animation{
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+     100% {transform: rotate(360deg);}
+}
+.new-section{
+    position: relative;
+}
+#new{
+    position:absolute;
+    transform: translateX(-100px);
+    background-color: #00FF88;
+    border-radius: 1000px;
+    padding: 8px 16px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600px;
+}
+.microphone{
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+.paragraph{
+    transform: translateX(-60px);
+}
+.paragraph h2{
+    font-size: 3.75rem;
+    font-weight: 800px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.paragraph p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.button{
+    display: flex;
+    gap: 8px;
+}
+.btn-2,.btn-3{
+    border: 2px solid #00FF88;
+    border-radius: 10000px;
+    background: none;
+    color: #00FF88;
+    padding: 12px 20px 12px 48px;
+    font-size: 1rem;
+    font-weight: 600px;
+    cursor: pointer;
+}
+.btn-3{
+    background-image: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    padding: 10px 50px 10px 50px;
+    border: none;
+    color: #FFFFFF;
+}
+.about{
+    background-color: #1A0B2E;
+}
+.about-section{
+     max-width: 78%;
+    margin: 0 auto;
+}
+.about-container{
+    text-align: center;
+    padding: 50px 200px 80px 200px;
+}
+.about-container h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+.about-container p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+.rating{
+    padding: 80px 20px 120px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.rating-section{
+    max-width: 15%;
+    text-align: center;
+}
+.rating-section h2{
+    font-size: 3rem;
+    font-weight: 900px;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.rating-section p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: #FFFFFF;
+}
+.hero{
+    max-width: 100%;
+    background-color: #230E3D;
+}
+.hero-container{
+    max-width: 78%;
+    margin: 0 auto;
+    padding: 120px 200px;
+}
+#choose,#Future,#meet{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.premium{
+    grid-area: premium;
+}
+.mobile{
+    grid-area: mobile;
+}
+.global{
+    grid-area: global;
+}
+.interviews{
+    grid-area: interviews;
+}
+.rich{
+    grid-area: rich;
+}
+.card-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "premium mobile mobile"
+    "premium global global"
+    "interviews interviews rich";
+}
+.card-container h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.card-container p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: gray;
+    margin-top: 16px;
+}
+.card-container > div {
+    background: rgba(53, 17, 101, 0.6);
+    border-radius: 40px;
+    padding: 24px;
+}
+.video{
+    max-width: 100%;
+    background-color: #1A0B2E;
+}
+.video-container,.host-container{
+    max-width: 78%;
+    margin: 0 auto;
+    padding: 120px 200px;
+}
+.container-section{
+    display: flex;
+    gap: 30px;
+}
+.container iframe{
+    border-radius: 10px;
+    padding: 0px;
+}
+.container{
+    background-color: #250D44;
+    border-radius: 10px;
+}
+.container h2{
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+}
+.fiex{
+    padding: 10px;
+}
+.container p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: gray;
+    margin-bottom: 12px;
+}
+.container h6{
+    font-size: 1rem;
+    font-weight: 500px;
+    color: #00FF88;
+    margin-bottom: 12px;
+}
+.host{
+    max-width: 100%;
+    background-color: #1A0B2E;
+}
+.alex{
+    display: flex;
+    gap: 24px;
+}
+.Alex-Kumar{
+    padding: 40px 0px 40px 40px;
+}
+.alex-section{
+    padding: 48.5px 40px 48.5px 0px;
+}
+.alex-img{
+    display: flex;
+    gap: 20px;
+}
+.alex-section h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.alex-section p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: gray;
+    margin-bottom: 16px;
+}
+.alex-section img{
+    gap: 12px;
+}
+.conclusion-container img{
+    max-width: 100%;
+}
+.conclusion-container{
+     position: relative;
+}
+
+.conclusion-paragraph{
+    max-width: 88%;
+    padding: 110px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.tech{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.footer-img{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 32px;
+}
+.conclusion-paragraph p{
+    font-size: 1rem;
+    font-weight: 400px;
+    color: white;
+}
+/*Small Device */
+@media screen and (max-width:576px) {
+    .hide{
+        display: none;
+    }
+    header{
+        padding: 24px 10px;
+    }
+    nav{
+       gap: 242px;
+       align-items: center;
+    }
+    .hamburger{
+        color: white;
+        font-size: 30px;
+        margin-left: -18px;
+    }
+    .move{
+        width: 150px;
+        height: 150px;
+    }
+    .circle{
+    max-width: 60%;
+    top: 80%;
+    left: 61%;
+    transform: translate(-50%,-50%);
+}
+#new{
+    transform: translateX(-30px);
+}
+.micro{
+    width: 80px;
+    height:50px;
+}
+.microphone{
+    top: 12%;
+    left: 12%;
+}
+.paragraph h2{
+    margin-top: 24px;
+    font-size: 2rem;
+    font-weight: 600px;
+    margin-bottom: 8px;
+}
+.paragraph p{
+    font-size: 0.7rem;
+    font-weight: 100px;
+    margin-bottom: 24px;
+}
+.btn{
+    padding: 2px 60px;
+    border-radius:80px;
+    font-size :0.7rem;
+    font-weight: 500;
+}
+.btn-2{
+    border-radius: 80px;
+    padding: 6px 60px;
+    font-size: 0.7rem;
+    font-weight: 400px;
+}
+.about-container{
+    padding: 200px 20px 15px 20px;
+}
+.about-container h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.rating{
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.rating-section h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.rating-section i{
+    display: inline;
+}
+.hero-container{
+    padding: 40px 10px;
+}
+#choose,#Future,#meet{
+    font-size: 2rem;
+}
+.card-container{
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "premium"
+    "mobile"
+    "global"
+    "interviews"
+    "rich";
+}
+.video-container,.host-container{
+    padding: 20px 0px;
+}
+.container-section{
+    flex-direction: column;
+    gap: 30px;
+}
+.container iframe{
+    width:100%;
+}
+.alex{
+    flex-direction: column;
+    gap: 24px;
+}
+.conclusion-paragraph{
+    padding: 40px 20px;
+    top: 60%;
+}
+.tech{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.footer-img{
+   margin-bottom: 5px;
+}
+.conclusion-paragraph p{
+    font-size: 0.5rem;
+}
+}
+/*Big device*/
+@media screen and (min-width:992px) {
+    .hamburger{
+        display: none !important;
+    }
+}
